@@ -1,0 +1,91 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = "viewport" content = "width=device-width,initial-scale=1.0">
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="{% static 'Home/css/styleContact.css' %}">
+    </head>
+    <body>
+
+        <header>
+            <a id="logo" href="{% url 'Home:home'%}">
+                <img src="{%  static 'Home/images/amrita.jpg' %}" alt="Logo">
+                <span>Smart Attendance Management System</span>
+            </a>
+
+            <!-- Main Navigation Links-->
+            <nav>
+                <ul>
+                    <li><a href="{% url 'Home:home' %}">Home</a></li>
+                    <li><a href="{% url 'Home:about' %}">About</a></li>
+                    <li><a href="{% url 'Home:contact' %}">Contact Us</a></li>
+                    <li><a href="{% url 'Home:calendar' %}">Calendar</a></li>
+                    <li><a href="{% url 'login'%}">Login</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <section class="contact">
+            <div class="content">
+                <h2>Contact Us</h2>
+                <p>We are happy to help</p>
+            </div>
+
+            <div class="container">
+                <div class="contactInfo">
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>Amrita Vishwa Vidyapeetham, <br>Ettimadai</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>99999900000</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>queries.team6.attendance@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactForm">
+                    <form
+                    action="https://formspree.io/f/mrgrgjgn"
+                    method="POST">
+                        <h2>Send Message</h2>
+                        <div class = "inputBox">
+                            <input type="text" name="Name" required="required">
+                            <span>Full Name</span>
+                        </div>
+
+                        <div class = "inputBox">
+                            <input type="text" name="_replyto" required="required">
+                            <span>Email</span>
+                        </div>
+
+                        <div class = "inputBox">
+                            <textarea required="required" name="Message"></textarea>
+                            <span>Type your Message . . .</span>
+                        </div>
+
+                        <div class = "inputBox">
+                            <input type ="submit" name="SubmitButton" value="Send">
+                            <a href="{% url 'Home:home'%}" class="btn"> Back </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

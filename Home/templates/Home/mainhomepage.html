@@ -1,0 +1,159 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Smart Attendance Management System</title>
+        <!-- attach our stylesheet -->
+        <link rel="stylesheet" href="{% static 'Home/css/style.css' %}">
+    </head>
+
+    <body>
+        <!-- the header images/amrita.jpg -->
+        <header>
+            <a id="logo" href="{% url 'Home:home' %}">
+                <img src="{% static 'Home/images/amrita.jpg' %}" alt="Logo">
+                <span>Smart Attendance Management System</span>
+            </a>
+
+            <!-- Main Navigation Links-->
+            <nav>
+                <ul>
+                    <li><a href="{% url 'Home:home'%}">Home</a></li>
+                    <li><a href="{% url 'Home:about' %}">About</a></li>
+                    <li><a href="{% url 'Home:contact' %}">Contact Us</a></li>
+                    <li><a href="{% url 'Home:calendar' %}">Calendar</a></li>
+                    <li><a href="{% url 'login'%}">Login</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <!-- The Main Content -->
+        <main>
+            <!--Hero Content -->
+            <div class="hero">
+                <!-- Content for the hero -->
+                <div class="hero-content">
+                    <h1 class ="hero-title">Smart Attendance Management</h1>
+                    <p>This application is used to store and manage the attendance of the Students</p>
+
+                    <a href="{% url 'Home:about' %}">Know More</a>
+                    <a href="{% url 'Home:contact' %}">Call Us</a>
+                </div>
+            </div>
+
+            <!-- Features Section -->
+            <div class ="site-section">
+                <div class="site-section-inside">
+                    <div class="section-header">
+                        <h2>Key Features</h2>
+                    </div>
+
+                    <div class="feature-box">
+                        <img src="{% static 'Home/images/like.png' %}" alt="Easy to use">
+                        <h5>Easy to Use</h5>
+                        <p>Very easy to navigate and use</p>
+                    </div>
+
+                    <div class="feature-box">
+                        <img src="{% static 'Home/images/faces.png' %}" alt="Face to Use">
+                        <h5>Face Recognition</h5>
+                        <p>Saves a lot of time</p>
+                    </div>
+
+                    <div class="feature-box">
+                        <img src="{% static 'Home/images/heart.png' %}" alt="Face to Use">
+                        <h5>You'll Love It</h5>
+                        <p>An app that you would love</p>
+
+                    </div>
+                </div>
+
+                <!--Creators Section-->
+                <div class="site-section site-section-secondary">
+                    <div class="site-section-inside">
+                        <div class="section-header">
+                            <h2>Creators</h2>
+                        </div>
+
+                        <div class="testimonial-box">
+                            <div class="testimonial-content">
+                                Developer 1
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="{% static 'Home/images/Akhila.jpg' %}" alt="Akhila Kolli">
+                                <h5>Akhila Kolli</h5>
+                                <span>Front End and Back End</span>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-box">
+                            <div class="testimonial-content">
+                                Developer 2
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="{% static 'Home/images/Sanjith.jpg' %}" alt="Sanjith">
+                                <h5>Sanjith</h5>
+                                <span>Scrum Master</span>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-box">
+                            <div class="testimonial-content">
+                                Developer 3
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="{% static 'Home/images/Hari.jpg' %}" alt="Hari">
+                                <h5>Hari</h5>
+                                <span>Facial Recognition model</span>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-box">
+                            <div class="testimonial-content">
+                                Developer 4
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="{% static 'Home/images/Hitharth.jpg' %}"" alt="Hitharth">
+                                <h5>Hitharth Kadam</h5>
+                                <span>Tester</span>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-box">
+                            <div class="testimonial-content">
+                                Developer 5
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="{% static 'Home/images/Shyam.jpg' %}" alt="Shyam">
+                                <h5>Shyam Nagarajan</h5>
+                                <span>Dashboard design</span>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-box">
+                            <div class="testimonial-content">
+                                Developer 6
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="{% static 'Home/images/Priyatham.jpg' %}" alt="Priyatham">
+                                <h5>Priyatham</h5>
+                                <span>Tester</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+            </div>
+
+        </main>
+        <!-- the footer -->
+        <footer>
+            <span>SAMS Web App<br>Copyright &copy; Team6 </span>
+        </footer>
+    </body>
+</html>
+
