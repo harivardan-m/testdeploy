@@ -2,3 +2,6 @@ asgiref
 Django
 pytz
 sqlparse
+cmake
+python-facepp
+opencv-python
